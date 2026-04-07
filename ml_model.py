@@ -7,6 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 import config
 
 class MLModule:

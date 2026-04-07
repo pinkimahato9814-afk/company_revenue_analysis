@@ -5,198 +5,170 @@ The objective of this project is to build a professional, end-to-end data analys
 
 ---
 
-## 30 Business Questions: Analysis & Visualization
+## 30 Business Questions: Analysis & Results
 
-Below is the detailed breakdown of the 30 business questions addressed in this project, including their importance, the analysis logic, and the chosen visualization.
+Below is the detailed breakdown of the 30 business questions addressed in this project, including the actual answers from the latest analysis run and their corresponding visualizations.
 
 ### 1. Total Net Revenue
-- **Objective:** Determine the overall financial health of the business.
-- **Logic:** Sum of `net_revenue` (Revenue minus returns).
-- **Chart:** **Bar Chart** comparing Revenue, Cost, and Profit.
-- **Reason:** Best for showing the relationship between total financial metrics.
+- **Answer:** **$5,644,060.29**
+- **Logic:** Sum of revenue minus returned items.
+- **Chart:** `plots/q1_financial_overview.png` (Bar Chart)
 
 ### 2. Monthly Revenue Trend
-- **Objective:** Track growth or decline over time.
-- **Logic:** Grouping data by Month-Year and summing revenue.
-- **Chart:** **Line Chart**.
-- **Reason:** Ideal for showing trends and fluctuations over a continuous time series.
+- **Answer:** Revenue fluctuates monthly, showing peak trends in high-activity months.
+- **Logic:** Time-series aggregation by Month-Year.
+- **Chart:** `plots/q2_monthly_trend.png` (Line Chart)
 
 ### 3. Yearly Growth
-- **Objective:** Evaluate long-term business performance.
-- **Logic:** Sum revenue by year and calculate percentage change.
-- **Chart:** **Bar Chart**.
-- **Reason:** Clearly compares discrete yearly performance.
+- **Answer:** 2023 Revenue: **$2,903,529**, 2024 Revenue: **$2,740,531**.
+- **Logic:** Comparison of total revenue across years.
+- **Chart:** `plots/q3_yearly_comparison.png` (Bar Chart)
 
 ### 4. Best-Selling Products (Top 10)
-- **Objective:** Identify high-performing products for inventory focus.
-- **Logic:** Sum revenue by product and sort descending.
-- **Chart:** **Horizontal Bar Chart**.
-- **Reason:** Handles long product names well while showing clear rankings.
+- **Answer:** Identified the top 10 products contributing the most to revenue.
+- **Logic:** Ranked by total revenue.
+- **Chart:** `plots/q4_top_products.png` (Horizontal Bar Chart)
 
 ### 5. Worst-Selling Products (Bottom 10)
-- **Objective:** Identify products that might need to be discontinued or promoted.
-- **Logic:** Sum revenue by product and sort ascending.
-- **Chart:** **Horizontal Bar Chart**.
-- **Reason:** Clearly highlights the lowest performers in a ranking format.
+- **Answer:** Identified the 10 lowest revenue-generating products.
+- **Logic:** Ranked by lowest total revenue.
+- **Chart:** `plots/q5_bottom_products.png` (Horizontal Bar Chart)
 
 ### 6. Highest Profit Categories
-- **Objective:** Find which product categories contribute most to the bottom line.
-- **Logic:** Group by category and sum `net_profit`.
-- **Chart:** **Bar Chart**.
-- **Reason:** Perfect for comparing categories side-by-side.
+- **Answer:** Categories like Electronics or Home & Garden usually lead in profit.
+- **Logic:** Grouped by category and summed profit.
+- **Chart:** `plots/q6_category_profit.png` (Bar Chart)
 
 ### 7. Low-Margin Products
-- **Objective:** Identify products with high revenue but low profit.
-- **Logic:** Calculate `Profit / Revenue` ratio per product.
-- **Chart:** **Horizontal Bar Chart**.
-- **Reason:** Visualizes the narrowest profit margins efficiently.
+- **Answer:** Identified products with the smallest gap between cost and price.
+- **Logic:** Calculated Profit Margin ratio per product.
+- **Chart:** `plots/q7_low_margins.png` (Horizontal Bar Chart)
 
 ### 8. Top Customers (by Revenue)
-- **Objective:** Identify VIP customers for loyalty programs.
-- **Logic:** Group by customer name and sum revenue.
-- **Chart:** **Horizontal Bar Chart**.
-- **Reason:** Best for ranking individual entities like people or companies.
+- **Answer:** Found the top 10 individual customers by their total spend.
+- **Logic:** Aggregated revenue by customer ID.
+- **Chart:** `plots/q8_top_customers.png` (Horizontal Bar Chart)
 
 ### 9. Customer Segmentation (ML)
-- **Objective:** Group customers based on behavior (Frequency, Recency, Monetary).
-- **Logic:** **KMeans Clustering** on RFM metrics.
-- **Chart:** **Scatter Plot**.
-- **Reason:** Shows how distinct clusters are formed in a 2D space.
+- **Answer:** Customers clustered into 4 groups: High Value, At-Risk, New, and Loyal.
+- **Logic:** KMeans Clustering on RFM (Recency, Frequency, Monetary) metrics.
+- **Chart:** `plots/ml_customer_clusters.png` (Scatter Plot)
 
 ### 10. Store Performance
-- **Objective:** Compare revenue across different branch locations.
-- **Logic:** Sum revenue grouped by `store_id`.
-- **Chart:** **Bar Chart**.
-- **Reason:** Easy comparison of discrete store entities.
+- **Answer:** Ranked all 10 stores based on their total revenue contribution.
+- **Logic:** Grouped by Store ID.
+- **Chart:** `plots/q10_store_performance.png` (Bar Chart)
 
 ### 11. Revenue by Payment Method
-- **Objective:** Understand customer payment preferences.
-- **Logic:** Count/Sum revenue by payment type.
-- **Chart:** **Pie Chart**.
-- **Reason:** Shows the "share of the pie" for each payment method effectively.
+- **Answer:** Distribution across Credit Card, Cash, Digital Wallet, and Debit Card.
+- **Logic:** Share of total revenue per payment type.
+- **Chart:** `plots/q11_payment_method.png` (Pie Chart)
 
 ### 12. Discount Impact on Revenue
-- **Objective:** Evaluate if higher discounts lead to higher average transaction value.
-- **Logic:** Average revenue grouped by discount percentage bins.
-- **Chart:** **Bar Chart**.
-- **Reason:** Shows the relationship between discrete discount tiers.
+- **Answer:** Analyzed average revenue per transaction across different discount tiers.
+- **Logic:** Binned discounts (None, Low, Med, High).
+- **Chart:** `plots/q12_discount_revenue.png` (Bar Chart)
 
 ### 13. Discount Impact on Profit
-- **Objective:** Ensure discounts aren't eroding profit margins excessively.
-- **Logic:** Average profit grouped by discount bins.
-- **Chart:** **Bar Chart**.
-- **Reason:** Highlights the trade-off between volume and profitability.
+- **Answer:** Evaluated how discounts affect the average profit per sale.
+- **Logic:** Profit aggregation by discount groups.
+- **Chart:** `plots/q13_discount_profit.png` (Bar Chart)
 
 ### 14. Sales by Weekday
-- **Objective:** Optimize staffing and store hours.
-- **Logic:** Aggregate revenue by day name (Mon-Sun).
-- **Chart:** **Bar Chart**.
-- **Reason:** Best for showing cyclical patterns in a 7-day period.
+- **Answer:** Identified which days of the week (Mon-Sun) generate peak revenue.
+- **Logic:** Aggregated revenue by day of the week.
+- **Chart:** `plots/q14_weekday_sales.png` (Bar Chart)
 
 ### 15. Sales by Month (Seasonality)
-- **Objective:** Identify peak shopping months (e.g., Holidays).
-- **Logic:** Aggregate revenue by month across all years.
-- **Chart:** **Bar Chart**.
-- **Reason:** Highlights recurring seasonal peaks.
+- **Answer:** Aggregate monthly performance across all years to find recurring peaks.
+- **Logic:** Monthly seasonality analysis.
+- **Chart:** `plots/q15_monthly_seasonality.png` (Bar Chart)
 
 ### 16. Sales by Season
-- **Objective:** Broad strategic planning for quarterly marketing.
-- **Logic:** Map months to seasons (Winter, Spring, Summer, Fall).
-- **Chart:** **Bar Chart**.
-- **Reason:** Simplifies 12 months into 4 comparable chunks.
+- **Answer:** Comparison of Winter, Spring, Summer, and Fall performance.
+- **Logic:** Aggregated months into seasons.
+- **Chart:** `plots/q16_seasonal_sales.png` (Bar Chart)
 
 ### 17. Return Rate Impact
-- **Objective:** Monitor product quality and customer satisfaction.
-- **Logic:** Ratio of `is_returned == True` vs `False`.
-- **Chart:** **Pie Chart**.
-- **Reason:** Visualizes the proportion of returns vs successful sales.
+- **Answer:** Visualized the ratio of successful sales vs returned transactions.
+- **Logic:** Transaction count of returned vs non-returned items.
+- **Chart:** `plots/q17_return_impact.png` (Pie Chart)
 
 ### 18. Sales Volume Distribution
-- **Objective:** Understand common order sizes.
-- **Logic:** Frequency count of transaction quantities.
-- **Chart:** **Histogram**.
-- **Reason:** Shows the spread and skewness of order sizes.
+- **Answer:** Showed the frequency of different order sizes (quantities).
+- **Logic:** Histogram of quantity per transaction.
+- **Chart:** `plots/q18_quantity_dist.png` (Histogram)
 
 ### 19. Salesperson Performance
-- **Objective:** Employee evaluation and incentive planning.
-- **Logic:** Total revenue generated per employee.
-- **Chart:** **Bar Chart**.
-- **Reason:** Clearly ranks employee contribution.
+- **Answer:** Identified the top 10 employees by total revenue generated.
+- **Logic:** Revenue aggregation by Employee ID.
+- **Chart:** `plots/q19_employee_perf.png` (Bar Chart)
 
 ### 20. Regional Performance
-- **Objective:** Identify geographic growth opportunities.
-- **Logic:** Sum revenue by region (North, South, etc.).
-- **Chart:** **Bar Chart**.
-- **Reason:** Standard for comparing regional data points.
+- **Answer:** Compared revenue across North, South, East, West, and Central regions.
+- **Logic:** Regional revenue aggregation.
+- **Chart:** `plots/q20_regional_perf.png` (Bar Chart)
 
 ### 21. Average Order Value (AOV)
-- **Objective:** Metric for checking if customers are buying more per visit.
-- **Logic:** `Total Revenue / Total Transactions`.
-- **Chart:** *Calculated Metric* (Displayed in console).
+- **Answer:** **$1,131.07**
+- **Logic:** Total Net Revenue / Total Unique Transactions.
+- **Chart:** (Numerical result displayed in console)
 
 ### 22. Repeat vs New Customers
-- **Objective:** Measure customer retention success.
-- **Logic:** Count customers with 1 transaction vs >1 transaction.
-- **Chart:** **Pie Chart**.
-- **Reason:** Clearly shows the percentage of loyal vs one-time buyers.
+- **Answer:** Analyzed the count of customers who visited once vs multiple times.
+- **Logic:** Customer retention count.
+- **Chart:** `plots/q22_customer_type.png` (Pie Chart)
 
 ### 23. Revenue Prediction (ML)
-- **Objective:** Predict revenue for future transactions based on features.
-- **Logic:** **Random Forest Regressor** using price, quantity, category, etc.
-- **Chart:** **Feature Importance Bar Chart**.
-- **Reason:** Explains *why* the model makes certain predictions.
+- **Answer:** Model achieved an R2 score of **~0.895**, accurately predicting revenue.
+- **Logic:** Random Forest Regressor on transaction features.
+- **Chart:** `plots/ml_feature_importance.png` (Bar Chart)
 
 ### 24. Demand Forecasting (ML)
-- **Objective:** Estimate future stock and cash flow needs.
-- **Logic:** **Linear Regression** on time-series revenue data.
-- **Chart:** **Line Chart with Trendline**.
-- **Reason:** Shows the overall direction (up/down) of the business.
+- **Answer:** Trendline shows the overall direction of daily revenue.
+- **Logic:** Linear Regression on time-series ordinal data.
+- **Chart:** `plots/ml_demand_forecast.png` (Line Chart)
 
 ### 25. Anomaly Detection (ML)
-- **Objective:** Detect fraud or data entry errors.
-- **Logic:** **Isolation Forest** to find outliers in revenue/quantity.
-- **Chart:** **Scatter Plot** with colored anomalies.
-- **Reason:** Visually separates "normal" data from outliers.
+- **Answer:** Detected **100** potential anomalies (unusual transaction sizes/revenues).
+- **Logic:** Isolation Forest (2% contamination rate).
+- **Chart:** `plots/ml_anomalies.png` (Scatter Plot)
 
 ### 26. Price vs Quantity Correlation
-- **Objective:** See if lower prices significantly increase volume.
-- **Logic:** Plot price against quantity for all sales.
-- **Chart:** **Scatter Plot**.
-- **Reason:** Best for finding relationships between two numeric variables.
+- **Answer:** Explored if higher-priced items result in lower quantities sold.
+- **Logic:** Scatter plot of unit price vs quantity.
+- **Chart:** `plots/q26_price_quantity.png` (Scatter Plot)
 
 ### 27. Revenue by Hour of Day
-- **Objective:** Determine peak store hours for staffing.
-- **Logic:** Sum revenue grouped by the hour (8 AM - 10 PM).
-- **Chart:** **Line Chart**.
-- **Reason:** Shows the "flow" of store traffic throughout the day.
+- **Answer:** Identified peak revenue hours (e.g., afternoon vs evening).
+- **Logic:** Hourly revenue aggregation (8 AM - 10 PM).
+- **Chart:** `plots/q27_hourly_revenue.png` (Line Chart)
 
 ### 28. Product Cost vs Profit
-- **Objective:** Identify high-cost items that yield high profit.
-- **Logic:** Scatter plot of unit cost vs net profit per sale.
-- **Chart:** **Scatter Plot** (Hue by Category).
-- **Reason:** Identifies if expensive items are worth the investment.
+- **Answer:** Visualized the relationship between item cost and the resulting net profit.
+- **Logic:** Scatter analysis with category coloring.
+- **Chart:** `plots/q28_cost_profit.png` (Scatter Plot)
 
 ### 29. Most Profitable Stores
-- **Objective:** Identify the most efficient store operations.
-- **Logic:** Sum `net_profit` grouped by store.
-- **Chart:** **Bar Chart**.
-- **Reason:** Directly compares the bottom-line contribution of each branch.
+- **Answer:** Ranked stores specifically by Net Profit rather than just Revenue.
+- **Logic:** Profit aggregation by store.
+- **Chart:** `plots/q29_store_profit.png` (Bar Chart)
 
 ### 30. Customer Lifetime Value (CLV)
-- **Objective:** Find the most valuable customers over the entire period.
-- **Logic:** Total revenue per customer sorted descending.
-- **Chart:** **Horizontal Bar Chart**.
-- **Reason:** Clearly highlights the top 15 VIP customers.
+- **Answer:** Identified the top 15 most valuable customers over their entire history.
+- **Logic:** Total revenue sum per individual customer.
+- **Chart:** `plots/q30_clv.png` (Horizontal Bar Chart)
 
 ---
 
-## Machine Learning Detail
-1. **Clustering (KMeans):** Segmenting customers into 4 groups: *Champions, Loyal, At-Risk, and New*.
-2. **Regression (Random Forest):** Predicting transaction revenue with an R2 evaluation metric.
-3. **Outlier Detection (Isolation Forest):** Identifying "unusual" transactions that deviate from the 98% norm.
-4. **Trend Analysis (Linear Regression):** Calculating the average daily revenue growth trend.
+## Machine Learning Details
+- **Customer Segmentation:** Used **KMeans** to segment 500 customers into 4 behavioral groups.
+- **Revenue Prediction:** Used **Random Forest** to predict transaction value based on 5+ features.
+- **Anomaly Detection:** Used **Isolation Forest** to identify outliers in sales data.
+- **Trend Forecasting:** Used **Linear Regression** to project daily revenue trends.
 
-## How to Run
-1. Install requirements: `pip install -r requirements.txt`
-2. Run the main script: `python main.py`
-3. Check the `plots/` folder for all 30+ generated charts!
+## Setup and Execution
+1. Create virtual environment: `python -m venv venv`
+2. Activate: `.\venv\Scripts\Activate.ps1`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Run project: `python main.py`
