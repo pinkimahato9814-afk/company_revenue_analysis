@@ -1,0 +1,101 @@
+product_id,name,category,cost,price
+PRD0001,Product 1,Health & Beauty,242.58,403.52
+PRD0002,Product 2,Grocery,390.96,774.9
+PRD0003,Product 3,Home & Garden,208.96,279.14
+PRD0004,Product 4,Grocery,305.05,475.38
+PRD0005,Product 5,Electronics,18.99,31.85
+PRD0006,Product 6,Grocery,190.86,330.04
+PRD0007,Product 7,Electronics,114.37,222.5
+PRD0008,Product 8,Grocery,234.42,375.73
+PRD0009,Product 9,Grocery,456.66,594.33
+PRD0010,Product 10,Home & Garden,161.75,196.65
+PRD0011,Product 11,Apparel,354.09,533.24
+PRD0012,Product 12,Apparel,278.34,358.7
+PRD0013,Product 13,Health & Beauty,361.22,638.97
+PRD0014,Product 14,Health & Beauty,481.45,655.55
+PRD0015,Product 15,Electronics,73.63,91.05
+PRD0016,Product 16,Home & Garden,13.73,18.31
+PRD0017,Product 17,Electronics,112.44,146.53
+PRD0018,Product 18,Electronics,451.43,755.32
+PRD0019,Product 19,Electronics,75.49,129.76
+PRD0020,Product 20,Electronics,138.1,241.73
+PRD0021,Product 21,Electronics,279.37,345.36
+PRD0022,Product 22,Home & Garden,,506.44
+PRD0023,Product 23,Apparel,,324.57
+PRD0024,Product 24,Electronics,132.69,232.74
+PRD0025,Product 25,Grocery,399.15,786.6
+PRD0026,Product 26,Health & Beauty,142.42,202.58
+PRD0027,Product 27,Grocery,461.74,914.64
+PRD0028,Product 28,Grocery,,118.78
+PRD0029,Product 29,Home & Garden,152.91,190.04
+PRD0030,Product 30,Health & Beauty,286.83,516.15
+PRD0031,Product 31,Home & Garden,39.29,68.36
+PRD0032,Product 32,Health & Beauty,45.7,62.69
+PRD0033,Product 33,Health & Beauty,102.49,132.07
+PRD0034,Product 34,Health & Beauty,368.27,444.13
+PRD0035,Product 35,Home & Garden,151.94,190.25
+PRD0036,Product 36,Home & Garden,108.06,208.22
+PRD0037,Product 37,Health & Beauty,,257.52
+PRD0038,Product 38,Grocery,93.62,153.46
+PRD0039,Product 39,Apparel,422.18,669.43
+PRD0040,Product 40,Electronics,114.49,142.1
+PRD0041,Product 41,Health & Beauty,50.12,72.91
+PRD0042,Product 42,Health & Beauty,200.87,271.87
+PRD0043,Product 43,Grocery,437.47,545.48
+PRD0044,Product 44,Apparel,217.9,359.16
+PRD0045,Product 45,Electronics,364.24,529.48
+PRD0046,Product 46,Electronics,481.09,725.58
+PRD0047,Product 47,Grocery,116.51,154.68
+PRD0048,Product 48,Home & Garden,253.97,430.76
+PRD0049,Product 49,Electronics,52.09,95.91
+PRD0050,Product 50,Health & Beauty,333.75,473.25
+PRD0051,Product 51,Electronics,264.25,421.04
+PRD0052,Product 52,Health & Beauty,346.58,653.47
+PRD0053,Product 53,Electronics,46.39,59.66
+PRD0054,Product 54,Grocery,82.37,154.47
+PRD0055,Product 55,Health & Beauty,317.9,622.14
+PRD0056,Product 56,Home & Garden,439.59,737.84
+PRD0057,Product 57,Grocery,316.07,419.06
+PRD0058,Product 58,Home & Garden,268.3,371.76
+PRD0059,Product 59,Health & Beauty,18.66,34.11
+PRD0060,Product 60,Apparel,486.16,799.97
+PRD0061,Product 61,Grocery,307.5,469.94
+PRD0062,Product 62,Grocery,422.78,763.9
+PRD0063,Product 63,Grocery,489.38,845.32
+PRD0064,Product 64,Electronics,55.09,82.42
+PRD0065,Product 65,Apparel,58.46,110.49
+PRD0066,Product 66,Apparel,103.88,150.91
+PRD0067,Product 67,Grocery,262.57,517.32
+PRD0068,Product 68,Apparel,459.65,707.77
+PRD0069,Product 69,Electronics,182.51,244.64
+PRD0070,Product 70,Grocery,,444.05
+PRD0071,Product 71,Health & Beauty,29.02,53.14
+PRD0072,Product 72,Apparel,323.95,396.21
+PRD0073,Product 73,Electronics,74.46,93.07
+PRD0074,Product 74,Home & Garden,326.18,500.36
+PRD0075,Product 75,Apparel,335.95,544.22
+PRD0076,Product 76,Grocery,60.28,84.37
+PRD0077,Product 77,Health & Beauty,73.31,128.43
+PRD0078,Product 78,Grocery,497.39,965.72
+PRD0079,Product 79,Health & Beauty,20.94,40.21
+PRD0080,Product 80,Grocery,454.96,553.45
+PRD0081,Product 81,Health & Beauty,226.58,357.58
+PRD0082,Product 82,Grocery,354.92,586.9
+PRD0083,Product 83,Apparel,387.19,659.75
+PRD0084,Product 84,Home & Garden,338.77,598.44
+PRD0085,Product 85,Home & Garden,161.64,212.45
+PRD0086,Product 86,Electronics,295.3,539.99
+PRD0087,Product 87,Electronics,471.25,579.76
+PRD0088,Product 88,Apparel,315.67,499.55
+PRD0089,Product 89,Apparel,257.65,477.05
+PRD0090,Product 90,Health & Beauty,202.96,397.75
+PRD0091,Product 91,Grocery,66.72,131.12
+PRD0092,Product 92,Electronics,183.94,273.91
+PRD0093,Product 93,Home & Garden,224.79,352.83
+PRD0094,Product 94,Health & Beauty,441.01,644.56
+PRD0095,Product 95,Grocery,17.18,30.02
+PRD0096,Product 96,Apparel,194.57,243.69
+PRD0097,Product 97,Electronics,473.88,916.86
+PRD0098,Product 98,Grocery,368.62,589.4
+PRD0099,Product 99,Health & Beauty,34.04,52.09
+PRD0100,Product 100,Electronics,265.21,465.04
