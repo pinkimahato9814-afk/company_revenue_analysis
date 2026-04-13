@@ -117,6 +117,26 @@ These are the latest values already reflected in the current project outputs.
 | **Revenue Prediction R2** | **`~0.895`** |
 | **Detected Anomalies** | **`100`** |
 
+## Featured Visuals
+
+<p><mark><strong>Important:</strong> The charts below use repository-relative paths like <code>plots/q1_financial_overview.png</code>, which GitHub can render directly inside <code>README.md</code>.</mark></p>
+
+### Financial Overview
+
+<img src="plots/q1_financial_overview.png" alt="Overall Financial Overview" width="100%">
+
+### Monthly Revenue Trend
+
+<img src="plots/q2_monthly_trend.png" alt="Monthly Revenue Trend" width="100%">
+
+### Customer Segmentation
+
+<img src="plots/ml_customer_clusters.png" alt="Customer Segmentation" width="100%">
+
+### Revenue Prediction Feature Importance
+
+<img src="plots/ml_feature_importance.png" alt="Revenue Prediction Feature Importance" width="100%">
+
 ## Business Questions and Outputs
 
 <details>
@@ -126,29 +146,43 @@ These are the latest values already reflected in the current project outputs.
    Result: **`$5,644,060.29`**  
    Output: `plots/q1_financial_overview.png`
 
+   <img src="plots/q1_financial_overview.png" alt="Q1 Total Net Revenue" width="100%">
+
 2. **Q2 Monthly Revenue Trend**  
    Result: Revenue is tracked month by month to identify peaks and slow periods.  
    Output: `plots/q2_monthly_trend.png`
+
+   <img src="plots/q2_monthly_trend.png" alt="Q2 Monthly Revenue Trend" width="100%">
 
 3. **Q3 Yearly Growth**  
    Result: **`2023 = $2,903,529`**, **`2024 = $2,740,531`**  
    Output: `plots/q3_yearly_comparison.png`
 
+   <img src="plots/q3_yearly_comparison.png" alt="Q3 Yearly Growth" width="100%">
+
 4. **Q4 Best-Selling Products**  
    Logic: Top 10 products ranked by total `net_revenue`.  
    Output: `plots/q4_top_products.png`
+
+   <img src="plots/q4_top_products.png" alt="Q4 Best-Selling Products" width="100%">
 
 5. **Q5 Worst-Selling Products**  
    Logic: Bottom 10 products ranked by total `net_revenue`.  
    Output: `plots/q5_bottom_products.png`
 
+   <img src="plots/q5_bottom_products.png" alt="Q5 Worst-Selling Products" width="100%">
+
 6. **Q6 Highest Profit Categories**  
    Logic: Product categories ranked by total `net_profit`.  
    Output: `plots/q6_category_profit.png`
 
+   <img src="plots/q6_category_profit.png" alt="Q6 Highest Profit Categories" width="100%">
+
 7. **Q7 Low-Margin Products**  
    Logic: Products with the smallest `margin = net_profit / net_revenue`.  
    Output: `plots/q7_low_margins.png`
+
+   <img src="plots/q7_low_margins.png" alt="Q7 Low-Margin Products" width="100%">
 
 </details>
 
@@ -159,33 +193,49 @@ These are the latest values already reflected in the current project outputs.
    Logic: Customers ranked by total `net_revenue`.  
    Output: `plots/q8_top_customers.png`
 
+   <img src="plots/q8_top_customers.png" alt="Q8 Top Customers by Revenue" width="100%">
+
 9. **Q9 Customer Segmentation**  
    Method: `KMeans` clustering on RFM-style features.  
    Output: `plots/ml_customer_clusters.png`
+
+   <img src="plots/ml_customer_clusters.png" alt="Q9 Customer Segmentation" width="100%">
 
 10. **Q10 Store Performance**  
     Logic: Stores ranked by total `net_revenue`.  
     Output: `plots/q10_store_performance.png`
 
+    <img src="plots/q10_store_performance.png" alt="Q10 Store Performance" width="100%">
+
 11. **Q11 Revenue by Payment Method**  
     Logic: Revenue split across payment types.  
     Output: `plots/q11_payment_method.png`
+
+    <img src="plots/q11_payment_method.png" alt="Q11 Revenue by Payment Method" width="100%">
 
 12. **Q12 Discount Impact on Revenue**  
     Logic: Average revenue per transaction by discount group.  
     Output: `plots/q12_discount_revenue.png`
 
+    <img src="plots/q12_discount_revenue.png" alt="Q12 Discount Impact on Revenue" width="100%">
+
 13. **Q13 Discount Impact on Profit**  
     Logic: Average profit per transaction by discount group.  
     Output: `plots/q13_discount_profit.png`
+
+    <img src="plots/q13_discount_profit.png" alt="Q13 Discount Impact on Profit" width="100%">
 
 14. **Q14 Sales by Weekday**  
     Logic: Revenue by `Monday` to `Sunday`.  
     Output: `plots/q14_weekday_sales.png`
 
+    <img src="plots/q14_weekday_sales.png" alt="Q14 Sales by Weekday" width="100%">
+
 15. **Q15 Sales by Month Seasonality**  
     Logic: Monthly revenue aggregated across years.  
     Output: `plots/q15_monthly_seasonality.png`
+
+    <img src="plots/q15_monthly_seasonality.png" alt="Q15 Sales by Month Seasonality" width="100%">
 
 </details>
 
@@ -196,21 +246,31 @@ These are the latest values already reflected in the current project outputs.
     Logic: Revenue grouped into `Winter`, `Spring`, `Summer`, and `Fall`.  
     Output: `plots/q16_seasonal_sales.png`
 
+    <img src="plots/q16_seasonal_sales.png" alt="Q16 Sales by Season" width="100%">
+
 17. **Q17 Return Rate Impact**  
     Logic: Count of returned vs non-returned transactions.  
     Output: `plots/q17_return_impact.png`
+
+    <img src="plots/q17_return_impact.png" alt="Q17 Return Rate Impact" width="100%">
 
 18. **Q18 Sales Volume Distribution**  
     Logic: Histogram of transaction quantities.  
     Output: `plots/q18_quantity_dist.png`
 
+    <img src="plots/q18_quantity_dist.png" alt="Q18 Sales Volume Distribution" width="100%">
+
 19. **Q19 Salesperson Performance**  
     Logic: Top employees ranked by total `net_revenue`.  
     Output: `plots/q19_employee_perf.png`
 
+    <img src="plots/q19_employee_perf.png" alt="Q19 Salesperson Performance" width="100%">
+
 20. **Q20 Regional Performance**  
     Logic: Revenue comparison by region.  
     Output: `plots/q20_regional_perf.png`
+
+    <img src="plots/q20_regional_perf.png" alt="Q20 Regional Performance" width="100%">
 
 21. **Q21 Average Order Value**  
     Result: **`$1,131.07`**  
@@ -219,6 +279,8 @@ These are the latest values already reflected in the current project outputs.
 22. **Q22 Repeat vs New Customers**  
     Logic: Customers with one transaction vs more than one transaction.  
     Output: `plots/q22_customer_type.png`
+
+    <img src="plots/q22_customer_type.png" alt="Q22 Repeat vs New Customers" width="100%">
 
 </details>
 
@@ -230,34 +292,50 @@ These are the latest values already reflected in the current project outputs.
     Result: **`R2 ~ 0.895`**  
     Output: `plots/ml_feature_importance.png`
 
+    <img src="plots/ml_feature_importance.png" alt="Q23 Revenue Prediction" width="100%">
+
 24. **Q24 Demand Forecasting**  
     Method: `LinearRegression` on daily revenue trend.  
     Output: `plots/ml_demand_forecast.png`
+
+    <img src="plots/ml_demand_forecast.png" alt="Q24 Demand Forecasting" width="100%">
 
 25. **Q25 Anomaly Detection**  
     Method: `IsolationForest` with `2%` contamination.  
     Result: **`100 potential anomalies`**  
     Output: `plots/ml_anomalies.png`
 
+    <img src="plots/ml_anomalies.png" alt="Q25 Anomaly Detection" width="100%">
+
 26. **Q26 Price vs Quantity Correlation**  
     Logic: Relationship between product price and quantity sold.  
     Output: `plots/q26_price_quantity.png`
+
+    <img src="plots/q26_price_quantity.png" alt="Q26 Price vs Quantity Correlation" width="100%">
 
 27. **Q27 Revenue by Hour of Day**  
     Logic: Revenue pattern across store hours.  
     Output: `plots/q27_hourly_revenue.png`
 
+    <img src="plots/q27_hourly_revenue.png" alt="Q27 Revenue by Hour of Day" width="100%">
+
 28. **Q28 Product Cost vs Profit**  
     Logic: Scatter analysis of item cost against `net_profit`.  
     Output: `plots/q28_cost_profit.png`
+
+    <img src="plots/q28_cost_profit.png" alt="Q28 Product Cost vs Profit" width="100%">
 
 29. **Q29 Most Profitable Stores**  
     Logic: Stores ranked by `net_profit`.  
     Output: `plots/q29_store_profit.png`
 
+    <img src="plots/q29_store_profit.png" alt="Q29 Most Profitable Stores" width="100%">
+
 30. **Q30 Customer Lifetime Value**  
     Logic: Top 15 customers by total lifetime `net_revenue`.  
     Output: `plots/q30_clv.png`
+
+    <img src="plots/q30_clv.png" alt="Q30 Customer Lifetime Value" width="100%">
 
 </details>
 
@@ -275,12 +353,16 @@ These are the latest values already reflected in the current project outputs.
   - `Monetary`
 - Output: `plots/ml_customer_clusters.png`
 
+<img src="plots/ml_customer_clusters.png" alt="Customer Segmentation Output" width="100%">
+
 ### `revenue_prediction()`
 
 - Uses `RandomForestRegressor`
 - Encodes categorical fields with `pd.get_dummies()`
 - Evaluates with `MSE` and `R2`
 - Output: `plots/ml_feature_importance.png`
+
+<img src="plots/ml_feature_importance.png" alt="Revenue Prediction Feature Importance Output" width="100%">
 
 ### `anomaly_detection()`
 
@@ -290,11 +372,15 @@ These are the latest values already reflected in the current project outputs.
   - `quantity`
 - Output: `plots/ml_anomalies.png`
 
+<img src="plots/ml_anomalies.png" alt="Anomaly Detection Output" width="100%">
+
 ### `demand_forecasting()`
 
 - Uses `LinearRegression`
 - Forecast basis: daily aggregated `net_revenue`
 - Output: `plots/ml_demand_forecast.png`
+
+<img src="plots/ml_demand_forecast.png" alt="Demand Forecasting Output" width="100%">
 
 </details>
 
